@@ -1,8 +1,8 @@
 namespace Comprei
 {
-    public partial class FormInicial : Form
+    public partial class Comprei : Form
     {
-        public FormInicial()
+        public Comprei()
         {
             InitializeComponent();
         }
