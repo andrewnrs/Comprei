@@ -92,7 +92,7 @@
             Name = "RegistrationForm";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Cadastre-se aqui";
-            FormClosing += EnrollmentForm_FormClosing;
+            FormClosing += RegistrationForm_FormClosing;
             ResumeLayout(false);
             PerformLayout();
         }

@@ -17,11 +17,20 @@ namespace Comprei.View
             var username = usernameTxtBx.Text;
             var userpass = passwordTxtBx.Text;
 
-            var logged = _customerController.ValidateLogin(username, userpass);
-
-            if (!logged)
+            try
             {
-                MessageBox.Show("Usuário e/ou senha estão incorretos", "Login inválido", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+
+                var logged = _customerController.ValidateLogin(username, userpass);
+
+                if (!logged)
+                {
+                    MessageBox.Show("Usuário e/ou senha estão incorretos", "Login inválido", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                    return;
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Erro ao tentar fazer login", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 

@@ -1,15 +1,4 @@
 ﻿using Comprei.Controller;
-using Microsoft.VisualBasic.Logging;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-using System.Xml.Linq;
 
 namespace Comprei.View
 {
@@ -26,7 +15,7 @@ namespace Comprei.View
         }
 
 
-        private void EnrollmentForm_FormClosing(object sender, FormClosingEventArgs e)
+        private void RegistrationForm_FormClosing(object sender, FormClosingEventArgs e)
         {
             _loginForm.Show();
             _loginForm.Focus();
@@ -34,7 +23,15 @@ namespace Comprei.View
 
         private void registerBtn_Click(object sender, EventArgs e)
         {
-            _customerController.RegisterCustomer(nameTxtBx.Text, loginTxtBx.Text, passwordTxtBx.Text, houseTxtBx.Text);
+            try
+            {
+                _customerController.RegisterCustomer(nameTxtBx.Text, loginTxtBx.Text, passwordTxtBx.Text, houseTxtBx.Text);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Erro ao cadastrar cliente!", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                return;
+            }
             Close();
         }
     }
