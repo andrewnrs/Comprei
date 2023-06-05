@@ -10,8 +10,8 @@ namespace Comprei.Model.Entities
 
         public Address? Address { get; set; }
 
-        public List<Storage>? Storage { get; set; }
+        public List<HouseStorage>? Storage { get; set; }
 
-        public List<User>? Users { get; set; }
+        public List<Customer>? Customers { get; set; }
     }
 }

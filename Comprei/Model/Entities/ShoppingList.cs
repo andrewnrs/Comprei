@@ -6,7 +6,7 @@ namespace Comprei.Model.Entities
     public class ShoppingList : Entity
     {
         public ShoppingStatus Status { get; set; } = ShoppingStatus.Created;
-        public User User { get; set; }
+        public Customer Customer { get; set; }
         public List<ShoppingProduct> ShoppingProducts { get; set; }
     }
 }

@@ -3,11 +3,11 @@ using System.ComponentModel.DataAnnotations;
 
 namespace Comprei.Model.Entities
 {
-    public class User : Entity
+    public class Customer : Entity
     {
-        public User() { }
+        public Customer() { }
 
-        public User(string name, string login, string password)
+        public Customer(string name, string login, string password)
         {
             Name = name;
             Login = login;

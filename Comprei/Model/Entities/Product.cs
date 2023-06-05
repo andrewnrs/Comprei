@@ -7,13 +7,8 @@ namespace Comprei.Model.Entities
     {
         [StringLength(120, MinimumLength = 3)]
         public string Name { get; set; }
-
-        [StringLength(120)]
         public string Description { get; set; }
-
         public long? Barcode { get; set; }
-
         public string? Picture { get; set; }
-
     }
 }
