@@ -29,9 +29,11 @@ namespace Comprei
             
             services.AddSingleton<CustomerController>();
             services.AddSingleton<HouseController>();
+            services.AddSingleton<ShoppingListController>();
 
             services.AddSingleton<CustomerRepository>();
             services.AddSingleton<HouseRepository>();
+            services.AddSingleton<ShoppingListRepository>();
 
             services.AddScoped<HouseStorageForm>();
             services.AddScoped<LoginForm>();
