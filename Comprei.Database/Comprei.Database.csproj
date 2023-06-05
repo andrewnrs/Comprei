@@ -9,11 +9,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Repositories\" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\Comprei\Comprei.csproj" />
+    <ProjectReference Include="..\Comprei.Domain\Comprei.Domain.csproj" />
   </ItemGroup>
 
 </Project>

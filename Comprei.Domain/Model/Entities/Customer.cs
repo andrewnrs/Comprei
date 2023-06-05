@@ -7,11 +7,12 @@ namespace Comprei.Model.Entities
     {
         public Customer() { }
 
-        public Customer(string name, string login, string password)
+        public Customer(string name, string login, string password, string houseNickname)
         {
             Name = name;
             Login = login;
             Password = password;
+            House = new House() { Nickname = houseNickname };
         }
 
         [StringLength(120, MinimumLength = 3)]

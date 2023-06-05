@@ -5,7 +5,9 @@ VisualStudioVersion = 17.5.33516.290
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Comprei", "Comprei\Comprei.csproj", "{085FF537-9A0C-4A9D-B605-E7F5C700FAAA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Comprei.Database", "Comprei.Database\Comprei.Database.csproj", "{07A5EBC7-1F13-4FCD-A64D-DEBB41F9ECED}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Comprei.Database", "Comprei.Database\Comprei.Database.csproj", "{07A5EBC7-1F13-4FCD-A64D-DEBB41F9ECED}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Comprei.Domain", "Comprei.Domain\Comprei.Domain.csproj", "{231BC6DC-D10D-4BD2-97B3-E9E7AC88F92D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{07A5EBC7-1F13-4FCD-A64D-DEBB41F9ECED}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{07A5EBC7-1F13-4FCD-A64D-DEBB41F9ECED}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{07A5EBC7-1F13-4FCD-A64D-DEBB41F9ECED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{231BC6DC-D10D-4BD2-97B3-E9E7AC88F92D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{231BC6DC-D10D-4BD2-97B3-E9E7AC88F92D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{231BC6DC-D10D-4BD2-97B3-E9E7AC88F92D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{231BC6DC-D10D-4BD2-97B3-E9E7AC88F92D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
