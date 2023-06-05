@@ -1,0 +1,15 @@
+FROM postgres:latest
+
+ENV POSTGRES_USER=compreiuser
+ENV POSTGRES_PASSWORD=compreipass
+ENV POSTGRES_DB=compreidb
+ENV POSTGRES_HOST_AUTH_METHOD=trust
+
+# Copy custom initialization scripts to the container
+# COPY init.sql /docker-entrypoint-initdb.d/
+
+# Expose the default PostgreSQL port
+EXPOSE 5432
+
+# Start the PostgreSQL service
+CMD ["postgres"]
