@@ -18,7 +18,8 @@ namespace Comprei
 
             var serviceProvider = serviceCollection.BuildServiceProvider();
 
-            var mainForm = serviceProvider.GetRequiredService<LoginForm>();
+            //var mainForm = serviceProvider.GetRequiredService<LoginForm>();
+            var mainForm = serviceProvider.GetRequiredService<HouseStorageForm>();
             Application.Run(mainForm);
         }
 
@@ -27,8 +28,12 @@ namespace Comprei
             services.AddTransient<CompreiContext>();
             
             services.AddSingleton<CustomerController>();
-            services.AddSingleton<CustomerRepository>();
+            services.AddSingleton<HouseController>();
 
+            services.AddSingleton<CustomerRepository>();
+            services.AddSingleton<HouseRepository>();
+
+            services.AddScoped<HouseStorageForm>();
             services.AddScoped<LoginForm>();
             services.AddScoped<HomePageForm>();
             services.AddScoped<RegistrationForm>();

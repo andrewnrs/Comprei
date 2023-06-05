@@ -9,5 +9,7 @@ namespace Comprei.Model.Entities
 
         public int Quantity { get; set; }
         public string? Observation { get; set; }
+        public DateTime? ExpirationDate { get; set; }
+        public DateTime? AcquisitionDate { get; set; }
     }
 }

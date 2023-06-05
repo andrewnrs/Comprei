@@ -8,15 +8,15 @@ namespace Comprei.Database.Repositories
 {
     public class CustomerRepository : Repository<Customer>
     {
-        private DbSet<Customer> customers;
+        private readonly DbSet<Customer> Customers;
 
         public CustomerRepository(CompreiContext compreiContext) : base(compreiContext)
         {
-            customers = compreiContext.Set<Customer>();
+            Customers = compreiContext.Set<Customer>();
         }
 
         public bool ValidateLogin(string login, string password)
-            => customers.Where(x => x.Login.Equals(login) && x.Password.Equals(password)).Any();
+            => Customers.Where(x => x.Login.Equals(login) && x.Password.Equals(password)).Any();
 
     }
 }

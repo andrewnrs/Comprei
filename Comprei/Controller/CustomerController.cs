@@ -25,5 +25,10 @@ namespace Comprei.Controller
         {
             return _customerRepository.ValidateLogin(login, password);
         }
+
+        public List<Customer> List()
+        {
+            return _customerRepository.GetAll().ToList();
+        }
     }
 }

@@ -8,7 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Model\VOs\" />
+    <Folder Include="DTOs\" />
   </ItemGroup>
 
 </Project>
